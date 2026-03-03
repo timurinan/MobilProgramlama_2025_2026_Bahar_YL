@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uygulama1</string>
+    <string name="textvwievyazı">TextView Örneğidir</string>
+    <string name="butonyazı">Onayla</string>
+    <string name="emailhint">Email Giriniz</string>
+    <string name="şifrehint">Şifre Giriniz</string>
+</resources>
