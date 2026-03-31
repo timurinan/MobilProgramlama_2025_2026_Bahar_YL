@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EklemeActivity">
+
+    <EditText
+        android:id="@+id/txt_adsoyad_ekle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Müşterinin Adı Soyadı"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_mail_ekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_mail_ekle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="Müşterinin Mail Adresi"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txt_telefon_ekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_adsoyad_ekle" />
+
+    <EditText
+        android:id="@+id/txt_telefon_ekle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Müşterinin Telefonu"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail_ekle" />
+
+    <Button
+        android:id="@+id/btn_kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefon_ekle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
