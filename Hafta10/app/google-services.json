@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "486359137056",
+    "firebase_url": "https://loginsigninapp-9a2b7-default-rtdb.firebaseio.com",
+    "project_id": "loginsigninapp-9a2b7",
+    "storage_bucket": "loginsigninapp-9a2b7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486359137056:android:284779b705f8d0f5933545",
+        "android_client_info": {
+          "package_name": "com.example.loginsgninapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIhx983Nr1XcsdAPIJ5EtYc3F9jGoieQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486359137056:android:0542c34fc1d95bb9933545",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIhx983Nr1XcsdAPIJ5EtYc3F9jGoieQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486359137056:android:07374cf61410d524933545",
+        "android_client_info": {
+          "package_name": "com.example.myloginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIhx983Nr1XcsdAPIJ5EtYc3F9jGoieQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486359137056-7rl70v29sahh4fcfsqbt2upnl55inq54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -43,7 +43,6 @@ public class GuncelleActivity extends AppCompatActivity {
                 Müşteri güncellenecek_müşteri=new Müşteri(adsoyad,telefon,mail);
                 güncellenecek_müşteri.setId(id);
                 vi.guncelle(güncellenecek_müşteri);
-
                 Intent main_intent=new Intent(GuncelleActivity.this,MainActivity.class);
                 startActivity(main_intent);
             }
