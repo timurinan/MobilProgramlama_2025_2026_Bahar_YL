@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GuncelleActivity">
+
+
+    <EditText
+        android:id="@+id/txt_guncelle_adsoyad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Müşterinin Adı Soyadı"
+        app:layout_constraintBottom_toTopOf="@+id/txt_guncelle_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_guncelle_mail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Müşterinin Maili"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txt_guncelle_telefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_guncelle_adsoyad" />
+
+    <EditText
+        android:id="@+id/txt_guncelle_telefon"
+        android:layout_width="347dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Müşterinin Telefonu"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_guncelle_mail" />
+
+    <Button
+        android:id="@+id/btn_guncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="198dp"
+        android:text="Güncelle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_guncelle_mail"
+        app:layout_constraintTop_toBottomOf="@+id/txt_guncelle_telefon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

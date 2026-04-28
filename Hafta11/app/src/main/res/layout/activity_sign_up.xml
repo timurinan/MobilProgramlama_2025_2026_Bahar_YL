@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity">
+
+    <EditText
+        android:id="@+id/txt_mail_signup"
+        android:layout_width="278dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Mail Adresinizi Giriniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_şifre1_signup"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Şifreni Giriniz"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail_signup" />
+
+    <EditText
+        android:id="@+id/txt_şifre2_signup"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:hint="Şifreni Giriniz"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail_signup" />
+
+    <Button
+        android:id="@+id/btn_kaydol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="84dp"
+        android:text="Kaydol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_şifre2_signup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
