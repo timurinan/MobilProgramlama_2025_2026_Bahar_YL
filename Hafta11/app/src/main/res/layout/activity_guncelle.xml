@@ -12,15 +12,16 @@
         android:id="@+id/txt_guncelle_adsoyad"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="56dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="Müşterinin Adı Soyadı"
+        android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/txt_guncelle_mail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="45dp"
         android:ems="10"
         android:hint="Müşterinin Maili"
@@ -43,13 +44,16 @@
         android:id="@+id/txt_guncelle_telefon"
         android:layout_width="347dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="57dp"
+        android:layout_marginStart="35dp"
         android:ems="10"
         android:hint="Müşterinin Telefonu"
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/btn_guncelle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_guncelle_mail" />
 
     <Button
@@ -62,7 +66,7 @@
         android:text="Güncelle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/txt_guncelle_mail"
         app:layout_constraintTop_toBottomOf="@+id/txt_guncelle_telefon" />
 

@@ -46,7 +46,6 @@ public class ListelemeActivity extends AppCompatActivity {
 
         BenimAdapter ba=new BenimAdapter(müşteriler, getApplicationContext());
 
-
         LinearLayoutManager llm=new LinearLayoutManager(getApplicationContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(llm);

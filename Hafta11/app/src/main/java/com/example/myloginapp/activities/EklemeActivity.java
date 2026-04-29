@@ -2,6 +2,8 @@ package com.example.myloginapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Patterns;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,15 +45,37 @@ public class EklemeActivity extends AppCompatActivity {
 
     private void müşteriEkle() {
 
-        FirebaseDatabase veritabanı=FirebaseDatabase.getInstance();
-        DatabaseReference referans=veritabanı.getReference("müşteriler");
-        String anahtar=referans.push().getKey();
-        DatabaseReference nesnereferansı=veritabanı.getReference("müşteriler/"+anahtar);
-        Müşteri müşteri=new Müşteri(txt_ekle_adsoyad.getText().toString(), txt_ekle_mail.getText().toString(),txt_ekle_telefon.getText().toString());
-        müşteri.setAnahtar(anahtar);
-        nesnereferansı.setValue(müşteri);
-        Toast.makeText(this, "Müşteri Başarıyla Eklendi", Toast.LENGTH_SHORT).show();
-        Intent listele_intent=new Intent(EklemeActivity.this, ListelemeActivity.class);
-        startActivity(listele_intent);
+        if(TextUtils.isEmpty(txt_ekle_adsoyad.getText().toString())){
+            Toast.makeText(this, "Ad soyad alanı boş bırakılamaz.", Toast.LENGTH_SHORT).show();
+        }else{
+            if(TextUtils.isEmpty(txt_ekle_mail.getText().toString())){
+                Toast.makeText(this, "Mail alanı boş bırakılamaz.", Toast.LENGTH_SHORT).show();
+            }else{
+                if(TextUtils.isEmpty(txt_ekle_telefon.getText().toString())){
+                    Toast.makeText(this, "Telefon alanı boş bırakılamaz.", Toast.LENGTH_SHORT).show();
+                }else{
+                    if(!Patterns.EMAIL_ADDRESS.matcher(txt_ekle_mail.getText().toString()).matches()){
+                        Toast.makeText(this, "Mail formatı yanlış.", Toast.LENGTH_SHORT).show();
+                    }else{
+                        if(!Patterns.PHONE.matcher(txt_ekle_telefon.getText().toString()).matches()){
+                            Toast.makeText(this, "Telefon formatı yanlış.", Toast.LENGTH_SHORT).show();
+                        }else{
+                            FirebaseDatabase veritabanı=FirebaseDatabase.getInstance();
+                            DatabaseReference referans=veritabanı.getReference("müşteriler");
+                            String anahtar=referans.push().getKey();
+                            DatabaseReference nesnereferansı=veritabanı.getReference("müşteriler/"+anahtar);
+                            Müşteri müşteri=new Müşteri(txt_ekle_adsoyad.getText().toString(), txt_ekle_mail.getText().toString(),txt_ekle_telefon.getText().toString());
+                            müşteri.setAnahtar(anahtar);
+                            nesnereferansı.setValue(müşteri);
+                            Toast.makeText(this, "Müşteri Başarıyla Eklendi", Toast.LENGTH_SHORT).show();
+                            Intent listele_intent=new Intent(EklemeActivity.this, ListelemeActivity.class);
+                            startActivity(listele_intent);
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
